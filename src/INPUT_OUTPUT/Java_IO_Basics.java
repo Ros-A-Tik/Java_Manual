@@ -1,6 +1,9 @@
 package INPUT_OUTPUT;
 
-import java.util.HashSet;
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.InputStreamReader;
+import java.util.*;
 
 public class Java_IO_Basics {
     //IO Streams
@@ -43,23 +46,48 @@ public class Java_IO_Basics {
     public static String pushbackInputStream = "\tPushbackInputStream";
     public static String sequenceInputStream = "\tSequenceInputStream";
 
+    //IO Character Stream Classes
+    public static String readerCharacterStreamClasses = "The Input Character Classes are:";
+    public static String writerCharacterStreamClasses = "The Output Character Classes are:";
+
+    public static String bufferedReader = "\tBufferedReader";
+    public static String bufferedWriter = "\tBufferedWriter";
+    public static String charArrayReader = "\tCharArrayReader";
+    public static String charArrayWriter = "\tCharArrayWriter";
+    public static String fileReader = "\tFileReader";
+    public static String fileWriter = "\tFileWriter";
+    public static String inputStreamReader = "\tInputStreamReader";
+    public static String lineNumberReader = "\tLineNumberReader";
+    public static String outputStreamWriter = "\tOutputStreamWriter";
+    public static String pipedReader = "\tPipedReader";
+    public static String pipedWriter = "\tPipedWriter";
+    public static String printWriter = "\tPrintWriter";
+    public static String pushbackReader = "\tPushbackReader";
+    public static String reader = "\tReader";
+    public static String stringReader = "\tStringReader";
+    public static String stringWriter = "\tStringWriter";
+    public static String writer = "\tWriter";
+
+
     public static void input_Stream() {
 
-        HashSet <String> inputStream = new HashSet<String>();
+        ArrayList inputStream = new ArrayList();
 
         inputStream.add(input_Byte_Stream);
         inputStream.add(input_Character_Stream);
 
         System.out.println(input_streams + "\n\t" + input_streams_description + "\n\t" + input_Streams_Type);
 
-        for(String i : inputStream) {
-            System.out.println(i + ", ");
+        Collections.sort(inputStream);
+
+        for(Object i : inputStream) {
+            System.out.println(i);
         }
     }
 
     public static void input_Byte_Stream() {
 
-        HashSet <String> inputByteStreamClasses = new HashSet<String>();
+        ArrayList inputByteStreamClasses = new ArrayList();
 
         inputByteStreamClasses.add(bufferedInputStream);
         inputByteStreamClasses.add(byteArrayInputStream);
@@ -74,29 +102,32 @@ public class Java_IO_Basics {
 
         System.out.println(input_Byte_Stream_Classes);
 
-        for(String i : inputByteStreamClasses) {
-            System.out.println(i + ", ");
+        Collections.sort(inputByteStreamClasses);
+
+        for(Object i : inputByteStreamClasses) {
+            System.out.println(i);
         }
     }
 
     public static void output_Stream() {
 
-        HashSet <String> outputStream = new HashSet<String>();
+        ArrayList outputStream = new ArrayList();
 
         outputStream.add(output_Byte_Stream);
         outputStream.add(output_Character_Stream);
 
         System.out.println(output_streams + "\n\t" + output_streams_description + "\n\t" + output_Streams_Type);
 
-        for(String i : outputStream) {
-            System.out.println(i + ", ");
+        Collections.sort(outputStream);
+
+        for(Object i : outputStream) {
+            System.out.println(i);
         }
     }
 
-
     public static void output_Byte_Stream() {
 
-        HashSet <String> outputByteStreamClasses = new HashSet<String>();
+        ArrayList outputByteStreamClasses = new ArrayList();
 
         outputByteStreamClasses.add(bufferedOutputStream);
         outputByteStreamClasses.add(byteArrayOutputStream);
@@ -110,8 +141,55 @@ public class Java_IO_Basics {
 
         System.out.println(output_Byte_Stream_Classes);
 
-        for(String i : outputByteStreamClasses) {
-            System.out.println(i + ", ");
+        Collections.sort(outputByteStreamClasses);
+
+        for(Object i : outputByteStreamClasses) {
+            System.out.println(i);
+        }
+    }
+
+    public static void reader_Character_Stream() {
+
+        ArrayList reader_Character_Stream_Classes = new ArrayList();
+
+        reader_Character_Stream_Classes.add(bufferedReader);
+        reader_Character_Stream_Classes.add(charArrayReader);
+        reader_Character_Stream_Classes.add(fileReader);
+        reader_Character_Stream_Classes.add(inputStreamReader);
+        reader_Character_Stream_Classes.add(lineNumberReader);
+        reader_Character_Stream_Classes.add(pipedReader);
+        reader_Character_Stream_Classes.add(pushbackReader);
+        reader_Character_Stream_Classes.add(reader);
+        reader_Character_Stream_Classes.add(stringReader);
+
+        System.out.println(readerCharacterStreamClasses);
+
+        Collections.sort(reader_Character_Stream_Classes);
+
+        for (Object i : reader_Character_Stream_Classes) {
+            System.out.println (i);
+        }
+    }
+
+    public static void writer_Character_Stream() {
+
+        ArrayList writer_Character_Stream_Classes = new ArrayList();
+
+        writer_Character_Stream_Classes.add(bufferedWriter);
+        writer_Character_Stream_Classes.add(charArrayWriter);
+        writer_Character_Stream_Classes.add(fileWriter);
+        writer_Character_Stream_Classes.add(outputStreamWriter);
+        writer_Character_Stream_Classes.add(pipedWriter);
+        writer_Character_Stream_Classes.add(printWriter);
+        writer_Character_Stream_Classes.add(stringWriter);
+        writer_Character_Stream_Classes.add(writer);
+
+        System.out.println(writerCharacterStreamClasses);
+
+        Collections.sort(writer_Character_Stream_Classes);
+
+        for (Object i : writer_Character_Stream_Classes) {
+            System.out.println (i);
         }
     }
 
@@ -121,9 +199,13 @@ public class Java_IO_Basics {
         System.out.println();
         input_Byte_Stream();
         System.out.println();
+        reader_Character_Stream();
+        System.out.println();
         output_Stream();
         System.out.println();
         output_Byte_Stream();
+        System.out.println();
+        writer_Character_Stream();
 
     }
 }
