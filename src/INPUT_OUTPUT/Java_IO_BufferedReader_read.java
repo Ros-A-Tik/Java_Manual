@@ -2,7 +2,7 @@ package INPUT_OUTPUT;
 
 import java.io.*;
 
-public class Java_IO_BafferedReader_read {
+public class Java_IO_BufferedReader_read {
 
     public static void main(String[] args) throws Exception {
 
