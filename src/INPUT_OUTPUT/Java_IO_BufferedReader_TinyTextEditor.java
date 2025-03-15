@@ -6,8 +6,7 @@ public class Java_IO_BufferedReader_TinyTextEditor  {
 
     public static String[] str = new String[100];
 
-    public static void main (String[] args) throws Exception {
-
+    public static void textWriter() throws Exception {
         Java_IO_BufferedReader_readLIne brl = new Java_IO_BufferedReader_readLIne();
 
         System.out.println(brl.strLine + "\n" + brl.strStop);
@@ -27,5 +26,11 @@ public class Java_IO_BufferedReader_TinyTextEditor  {
             }
             System.out.println(str[i]);
         }
+    }
+
+    public static void main (String[] args) throws Exception {
+
+        textWriter();
+
     }
 }
