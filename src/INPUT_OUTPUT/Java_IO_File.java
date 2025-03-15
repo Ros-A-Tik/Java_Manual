@@ -2,7 +2,7 @@ package INPUT_OUTPUT;
 
 import java.io.*;
 
-public class Java_IO_FileInputStream_FileOutPoutStream {
+public class Java_IO_File {
 
     public static String dName = "D:\\JVA";
     public static String fName = "D:\\JVA\\My_First_File.txt";
