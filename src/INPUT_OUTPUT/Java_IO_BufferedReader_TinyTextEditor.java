@@ -10,6 +10,8 @@ public class Java_IO_BufferedReader_TinyTextEditor  {
 
     public static void textWriter() throws Exception {
 
+        System.out.println(brl.strLine + "\n" + brl.strStop);
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in, System.console().charset()));
 
         for (int i = 0; i < 100; i++) {
@@ -29,8 +31,6 @@ public class Java_IO_BufferedReader_TinyTextEditor  {
     }
 
     public static void main (String[] args) throws Exception {
-
-        System.out.println(brl.strLine + "\n" + brl.strStop);
 
         textWriter();
 
