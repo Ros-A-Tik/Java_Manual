@@ -68,7 +68,7 @@ public class Java_IO_FileInputStream_read {
             do {
                 i = fis.read();
                 if ((i != -1)) {
-                    System.out.print((char) i);
+                    System.out.print((char)i);
                 }
             } while (i != -1);
         } catch (Exception e) {
