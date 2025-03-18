@@ -13,7 +13,10 @@ public class Java_IO_File {
     public static File f;
     public static PrintWriter pw = new PrintWriter (System.out, true);
 
-    public static void createDirectory() {
+    public static void createDirectory(String dirName) {
+
+        String dName = dirName;
+
         try {
             f = new File(dName);
             dirCreate = f.mkdir();
@@ -27,7 +30,10 @@ public class Java_IO_File {
         }
     }
 
-    public static void createDirectores() {
+    public static void createDirectores(String dirsName) {
+
+        String dsName = dirsName;
+
         try {
             f = new File(dsName);
             dirCreate = f.mkdirs();
@@ -41,7 +47,11 @@ public class Java_IO_File {
         }
     }
 
-    public static void createFile () {
+    public static void createFile (String dirName, String fileName) {
+
+        String fName = fileName;
+        String dName = dirName;
+
         try {
             f = new File(dName + "\\" +fName);
             if (f.exists()) {
@@ -56,9 +66,13 @@ public class Java_IO_File {
         }
     }
 
-    public static void createFiles () {
+    public static void createFiles (String dirsName, String fileName) {
+
+        String dsName = dirsName;
+        String fName = fileName;
+
         try {
-            f = new File(dsName + "\\" + fName);
+            f = new File(dsName + "/" + fName);
             if (f.exists()) {
                 pw.println("The File with the same name exists");
             } else if (f.createNewFile()) {
@@ -73,11 +87,11 @@ public class Java_IO_File {
 
     public static void main (String[] args) {
 
-        createDirectory();
-        createFile();
+        createDirectory(dName);
+        createFile(dName, fName);
 
-        createDirectores();
-        createFiles();
+        createDirectores(dsName);
+        createFiles(dsName, fName);
 
     }
 }
