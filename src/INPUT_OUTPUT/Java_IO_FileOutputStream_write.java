@@ -56,6 +56,13 @@ public class Java_IO_FileOutputStream_write {
             "\t}\n" +
             "}";
 
+    public static void fileOutputStream(String dirFosName, String fileFosNAme) {
+        String dirName = dirFosName;
+        String fileName = fileFosNAme;
+
+
+    }
+
 
     public static void main (String[] args) throws Exception {
         f.createDirectory(dirFosName);
