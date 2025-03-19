@@ -2,7 +2,7 @@ package INPUT_OUTPUT;
 
 import java.io.FileInputStream;
 
-public class Java_IO_FileInputStream_read {
+public class Java_IO_read {
 
     public static String dirName = "D:/FileInputStream";
     public static String fileName = "FileInputStream.txt";

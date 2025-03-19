@@ -2,7 +2,7 @@ package INPUT_OUTPUT;
 
 import java.io.*;
 
-public class Java_IO_OutputStream_PrintWriter {
+public class Java_IO_PrintWriter {
 
     public static String str = "This is a string.";
     public static int i = -7;

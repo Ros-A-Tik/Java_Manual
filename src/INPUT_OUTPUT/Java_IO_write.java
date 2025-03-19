@@ -1,8 +1,6 @@
 package INPUT_OUTPUT;
 
-import java.io.*;
-
-public class Java_IO_OutputStream_write {
+public class Java_IO_write {
 
     public static void main (String[] args) throws Exception {
         byte b;

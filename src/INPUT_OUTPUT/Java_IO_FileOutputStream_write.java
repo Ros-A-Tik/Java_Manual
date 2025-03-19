@@ -1,14 +1,12 @@
 package INPUT_OUTPUT;
 
-import java.io.*;
-
 public class Java_IO_FileOutputStream_write {
 
     public static Java_IO_File f = new Java_IO_File();
     public static String dirFosName = "D:/FileOutPutStream";
     public static String fileFosName = "File_Output_Stream.txt";
 
-    public static Java_IO_FileInputStream_read jIoFis = new Java_IO_FileInputStream_read();
+    public static Java_IO_read jIoFis = new Java_IO_read();
     public static String fileFisName = jIoFis.dirName + "/" + jIoFis.fileName;
 
     public static String fisTextWrite = "/* Copy a file.\n" +
