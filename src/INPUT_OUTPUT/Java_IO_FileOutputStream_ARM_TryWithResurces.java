@@ -1,8 +1,9 @@
 package INPUT_OUTPUT;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
-public class Java_IO_FileOutputStream_write {
+public class Java_IO_FileOutputStream_ARM_TryWithResurces {
 
     public static Java_IO_File f = new Java_IO_File();
     public static String dirFosName = "D:/FileOutPutStream";
@@ -58,49 +59,31 @@ public class Java_IO_FileOutputStream_write {
             "}";
 
     public static void fileOutputStream_write (String dirFosName, String fileFosName) throws Exception {
-        int i;
-        String fileName = dirFosName + "/" + fileFosName;
 
-        FileInputStream fis = null;
-        FileOutputStream fos = null;
+        String fileName = dirFosName + "/" + fileFosName;
+        int i;
 
         //Copy file
-        try {
-            fis = new FileInputStream(fileFisName);
-            fos = new FileOutputStream(fileName);
-
+        try (FileInputStream fis = new FileInputStream(fileFisName); FileOutputStream fos = new FileOutputStream(fileName)) {
             do {
                 i = fis.read();
                 if (i != -1) {
                     fos.write(i);
                 }
             } while (i != -1);
-
-            if(fis != null) {
-                fis.close();
-            }
-
-            if (fis != null) {
-                fos.close();
-            }
-
-        } catch (Exception e) {
-            System.out.println("Error! " + e);
         }
+
     }
 
     public static void fileOutputStream_addTextTiFIle (String dirName, String fileName) throws Exception {
 
         String fName = dirName + "/" + fileName;
 
-         try {
-            FileOutputStream fos = new FileOutputStream(fName);
-            String nTxt = jIoFis.textWrite + "\n\n\n" + newText;
-            fos.write(nTxt.getBytes());
-            fos.close();
-        } catch (Exception e) {
-            System.out.println("Error! " + e);
-        }
+         try (FileOutputStream fos = new FileOutputStream(fName);) {
+             String nTxt = jIoFis.textWrite + "\n\n\n" + newText;
+             fos.write(nTxt.getBytes());
+         }
+
     }
 
     public static void main (String[] args) throws Exception {
@@ -115,4 +98,5 @@ public class Java_IO_FileOutputStream_write {
         fileOutputStream_addTextTiFIle(dirFosName, fileFosName);
 
     }
+
 }
