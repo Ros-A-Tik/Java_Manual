@@ -13,6 +13,6 @@ public class Java_GENERICS_SimpleExample<T> {
     }
 
     void showTYpe() {
-        System.out.println("Type og this \"T\" us: " + ob.getClass().getName());
+        System.out.println("Type of this \"T\" is: " + ob.getClass().getName());
     }
 }
