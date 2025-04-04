@@ -1,11 +1,13 @@
 package GENERICS;
 
 public class Java_GENERICS_WildCard_Bounded_TwoD {
-    int x, y;
+    public int x, y;
 
-    Java_GENERICS_WildCard_Bounded_TwoD(int a, int b) {
+    public Java_GENERICS_WildCard_Bounded_TwoD(int a, int b) {
         x = a;
         y = b;
     }
 
+    public Java_GENERICS_WildCard_Bounded_TwoD() {
+    }
 }
