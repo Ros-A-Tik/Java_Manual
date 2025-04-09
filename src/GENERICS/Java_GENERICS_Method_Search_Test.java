@@ -36,6 +36,5 @@ public class Java_GENERICS_Method_Search_Test {
         if (jgm.isInside('B', charValues)) {
             System.out.println("The character \'B\' is not inside the Array \"charValues\".");
         }
-
     }
 }
