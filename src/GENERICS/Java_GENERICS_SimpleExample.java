@@ -12,7 +12,7 @@ public class Java_GENERICS_SimpleExample<T> {
         return ob;
     }
 
-    void showTYpe() {
+    void showTYpe () {
         System.out.println("Type of this \"T\" is: " + ob.getClass().getName());
     }
 }
