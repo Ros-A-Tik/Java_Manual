@@ -10,11 +10,18 @@ public class Java_GENERICS_OverridingMethods_Test {
         Java_GENERICS_OverridingMethods_Overriding <Integer, Integer> o_2 = new Java_GENERICS_OverridingMethods_Overriding<>(99, 999);
 
         PrintWriter pw = new PrintWriter (System.out, true);
+
         pw.println(o_1.getOb());
+
         pw.println();
         pw.println(o_2.getOb());
+
         pw.println();
         pw.println(o_2.getOv());
+
+        pw.println();
+        var mc = new Java_GENERICS_OverridingMethods_Overriding<>(99, 999);
+        pw.println("Generics using by local type variable \"var mc\": " + mc.getOv()+ ", " + mc.getOb() + ", " + mc.ob + ", " + mc.ov);
 
     }
 }
