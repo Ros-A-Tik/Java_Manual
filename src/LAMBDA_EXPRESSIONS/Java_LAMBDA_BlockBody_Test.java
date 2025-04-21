@@ -19,6 +19,20 @@ public class Java_LAMBDA_BlockBody_Test {
         System.out.println("The factorial of the 3 is: " + blockBody.func(3.0));
         System.out.println("The factorial of the 5 is: " + blockBody.func(5.0));
 
+        System.out.println();
+
+        Java_LAMBDA_BlockBody <String> str;
+        str = (String n) -> {
+            String result = "";
+
+            for (int i = n.length() - 1; i >= 0; i--) {
+                result += n.charAt(i);
+            }
+            return result;
+        };
+        System.out.println("Lambda reversed is: " + str.func("Lambda"));
+        System.out.println("Expression reversed is: " + str.func("Expression"));
+
     }
 
 }
