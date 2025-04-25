@@ -2,9 +2,9 @@ package LAMBDA_EXPRESSIONS;
 
 import java.io.*;
 
-public class Java_LAMBDA_Exception_TEst {
+public class Java_LAMBDA_Exception_Test {
 
-    public static     PrintWriter pw = new PrintWriter(System.out, true);
+    public static PrintWriter pw = new PrintWriter(System.out, true);
 
     public static void main(String [] args) throws Java_LAMBDA_Exception_Array {
 
