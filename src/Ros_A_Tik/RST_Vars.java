@@ -5,7 +5,7 @@ public class RST_Vars {
     //Name
     public static String rst_Name = "Ros-A-Tik";
 
-    //Language
+    //Start Page
     public static String rst_Language_Main_ru = "Выберете язык";
     public static String rst_Language_Main_en = "Choice the language";
     public static String rst_Language_Main_md = "Alegeți limba";
@@ -14,7 +14,7 @@ public class RST_Vars {
     public static String rst_Language_en = "English";
     public static String rst_Language_md = "Moldovenească";
 
-    //Registration
+    //Registration Page
     public static String rst_Registration_Main_ru = "Регистрация";
     public static String rst_Registration_Main_en = "Registration";
     public static String rst_Registration_Main_md = "Înregisrarea";
@@ -35,7 +35,7 @@ public class RST_Vars {
     public static String rst_Registration_Error_en = "Registration denied! A user with the same email address and/or password is already registered.";
     public static String rst_Registration_Error_md = "Refuz! Utilizator cu așa adresa electronică sau parola deja este înregistrat.";
 
-    //Enter
+    //Enter Page
     public static String rst_Enter_ru = "Вход";
     public static String rst_Enter_en = "Enter";
     public static String rst_Enter_md = "Intrare";
@@ -82,26 +82,38 @@ public class RST_Vars {
     public static String rst_Information_Main_en = "Choice the subject:";
     public static String rst_Information_Main_md = "Alege subiect:";
 
-    public static String rst_Information_Civil_ru = "Гражданское право";
-    public static String rst_Information_Civil_en = "Civil law";
-    public static String rst_Information_Civil_md = "Dreptul civil";
+    public static String rst_Information_CivilLaw_ru = "Гражданское право";
+    public static String rst_Information_CivilLaw_en = "Civil law";
+    public static String rst_Information_CivilLaw_md = "Dreptul civil";
 
-    public static String rst_Information_Labor_ru = "Трудовое право";
-    public static String rst_Information_Labor_en = "Labor law";
-    public static String rst_Information_Labor_md = "Dreptul muncii";
+    public static String rst_Information_CorporateLaw_ru = "Корпоративное право";
+    public static String rst_Information_CorporateLaw_en = "Corporate law";
+    public static String rst_Information_CorporateLaw_md = "Dreptul corporativ";
+
+    public static String rst_Information_ContractLaa_ru = "Договорное право";
+    public static String rst_Information_ContractLaa_en = "Contract law";
+    public static String rst_Information_ContractLaa_md = "Dreptul contractelor";
+
+    public static String rst_Information_LaborLaw_ru = "Трудовое право";
+    public static String rst_Information_LaborLaw_en = "Labor law";
+    public static String rst_Information_LaborLaw_md = "Dreptul muncii";
 
     //Services page
     public static String rst_Services_Main_ru = "Выберете услугу:";
     public static String rst_Services_Main_en = "Choice the service:";
     public static String rst_Services_Main_md = "Alege serviciu:";
 
+    public static String rst_Services_Expertise_ru = "Правовая экспертиза";
+    public static String rst_Services_Expertise_en = "Legal expertise";
+    public static String rst_Services_Expertise_md = "Expertiza juridică";
+
     public static String rst_Services_Document_ru = "Заказать документ";
     public static String rst_Services_Document_en = "Order a document";
     public static String rst_Services_Document_md = "Comandă document";
 
-    public static String rst_Services_Consultation_ru = "Заказать консультацию";
-    public static String rst_Services_Consultation_en = "Order a consultation";
-    public static String rst_Services_Consultation_md = "Comandă consultația";
+    public static String rst_Services_Consultation_ru = "Консультация";
+    public static String rst_Services_Consultation_en = "Consultation";
+    public static String rst_Services_Consultation_md = "Consultația";
     
     //Contact page
     public static String rst_Contact_Main_ru = "Введите текст сообщения:";
