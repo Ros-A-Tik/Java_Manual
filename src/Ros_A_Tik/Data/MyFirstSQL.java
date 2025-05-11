@@ -19,7 +19,6 @@ public class MyFirstSQL {
                 System.out.println(rs.getString("user_countryCode"));
                 System.out.println(rs.getString("user_phone"));
                 System.out.println(rs.getString("user_password"));
-
             }
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
