@@ -5,20 +5,20 @@ import java.sql.*;
 public class MyFirstSQL {
 
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/ros_a_tik";
-        String user = "root";
-        String password = "13579MySql08642#";
+        String url = "jdbc:mysql://localhost:3306/__________";
+        String user = "_________";
+        String password = "**********************";
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM rst_user");
 
             while (rs.next()) {
-                System.out.println(rs.getInt("user_id"));
-                System.out.println(rs.getString("user_email"));
-                System.out.println(rs.getString("user_countryCode"));
-                System.out.println(rs.getString("user_phone"));
-                System.out.println(rs.getString("user_password"));
+                System.out.println(rs.getInt("______"));
+                System.out.println(rs.getString("_______"));
+                System.out.println(rs.getString("______"));
+                System.out.println(rs.getString("_______"));
+                System.out.println(rs.getString("________"));
             }
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
