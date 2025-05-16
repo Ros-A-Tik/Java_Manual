@@ -6,8 +6,8 @@ public class MyFirstSQL {
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/__________";
-        String user = "_________";
-        String password = "**********************";
+        String user = "_________";//"root";
+        String password = "**********************";//"13579MySql08642#";
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             Statement stmt = conn.createStatement();
