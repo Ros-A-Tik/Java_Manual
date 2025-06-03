@@ -1,4 +1,4 @@
-package LAMBDA_EXPRESSIONS;
+package LAMBDA;
 
 public class Java_LAMBDA_MethodReferences_Generic_Ops {
     static <T> int countMatching (T[] vals, T v) {

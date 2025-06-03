@@ -1,4 +1,4 @@
-package LAMBDA_EXPRESSIONS;
+package LAMBDA;
 
 public interface Java_LAMBDA_BlockBody <T extends Comparable <T>>{
 

@@ -1,4 +1,4 @@
-package LAMBDA_EXPRESSIONS;
+package LAMBDA;
 
 import java.io.*;
 
