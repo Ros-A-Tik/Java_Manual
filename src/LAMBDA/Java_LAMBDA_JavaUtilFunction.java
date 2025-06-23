@@ -1,6 +1,5 @@
 package LAMBDA;
 
-import java.io.PrintWriter;
 import java.util.*;
 
 public class Java_LAMBDA_JavaUtilFunction {
@@ -33,37 +32,39 @@ public class Java_LAMBDA_JavaUtilFunction {
         hm.put(function, function_Definition);
         hm.put(predicate, predicate_Definition);
 
-        PrintWriter pw = new PrintWriter(System.out);
-        pw.println(predefinedInterfaces);
+        System.out.println(predefinedInterfaces);
         for (String i : hm.keySet()) {
-            pw.println(i);
+            System.out.println(i);
         }
 
-        pw.println("Input a name of the predefined interface for print of his definition.");
+        System.out.println();
+
+        System.out.println("Input a name of the predefined interface for print of his definition or 0 for exit.");
 
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
+
         switch (input) {
             case "UnaryOperator <T>":
-                pw.println(hm.get(unaryOperator));
+                System.out.println(hm.get(unaryOperator));
                 break;
             case "BinaryOperator <T>":
-                pw.println(hm.get(binaryOperator));
+                System.out.println(hm.get(binaryOperator));
                 break;
             case "Consumer <T>":
-                pw.println(hm.get(consumer));
+                System.out.println(hm.get(consumer));
                 break;
             case "Supplier <T>":
-                pw.println(hm.get(supplier));
+                System.out.println(hm.get(supplier));
                 break;
             case "Function <T, R>":
-                pw.println(hm.get(function));
+                System.out.println(hm.get(function));
                 break;
             case "Predicate <T>":
-                pw.println(hm.get(predicate));
+                System.out.println(hm.get(predicate));
                 break;
-            default:
-                pw.println("You input a wrong name.");
+            case "0":
+                System.exit(0);
         }
 
     }
