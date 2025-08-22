@@ -1,39 +1,27 @@
 package SWITCH;
 
-public class Java_SWITCH_ArrowBlock_01 {
+public class Java_SWITCH_ArrowBlock_02 {
 
     public static void main (String [] args) {
 
-        int up = 0;
-        int down = 0;
-        int left =0;
-        int right = 0;
+        boolean yIsVowel = true;
+        char ch = 'y';
 
-        char direction = 'R';
+        boolean isVowel = switch(ch) {
 
-        switch (direction) {
-            case 'L' -> {
-                System.out.println("Turning Left");
-                left ++;
+            case 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' -> true;
+
+            case 'y', 'Y' -> {
+                if (yIsVowel) {
+                    yield true;
+                } else {
+                    yield false;
+                }
             }
 
-            case 'R' -> {
-                System.out.println("Turning Right");
-                right ++;
+            default -> false;
+        };
 
-            }
-
-            case 'U' -> {
-                System.out.println("Moving Up");
-                up++;
-
-            }
-
-            case 'D' -> {
-                System.out.println("Moving Down.");down++;
-            }
-        }
-
-        System.out.println(right);
+        if(isVowel) System.out.println(ch + " is a vowel.");
     }
 }
